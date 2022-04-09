@@ -3,8 +3,8 @@ const { fetchWagyuItems } = require("./onestophalalWagyuScrape");
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require("twilio")(accountSid, authToken);
-const botNum = "+17033504743";
-const testRecipient = "+17039463356";
+const botNum = process.env.TWILIO_BOT_NUMBER;
+const testRecipient = process.env.RECIPIENT_NUMBER;
 
 const TOMAHAWK = "full-blood-wagyu-tomahawk-steak";
 const SOLD_OUT = "Sold Out";
