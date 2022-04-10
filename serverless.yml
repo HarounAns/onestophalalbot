@@ -10,6 +10,8 @@ provider:
   environment:
     TWILIO_ACCOUNT_SID: ${env:TWILIO_ACCOUNT_SID}
     TWILIO_AUTH_TOKEN: ${env:TWILIO_AUTH_TOKEN}
+    TWILIO_BOT_NUMBER: ${env:TWILIO_BOT_NUMBER}
+    RECIPIENT_NUMBER: ${env:RECIPIENT_NUMBER}
 
 functions:
   oneStopHalalAlert:
